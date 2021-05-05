@@ -4,15 +4,13 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>My Portfolio</title>
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        
         <div class="nav-container">
             <header>
                 <a href="index.html" class="logo">Matjaž Bratina</a>
-
                 <nav>
                     <ul>
                         <li><a href="#">My Work</a></li>
@@ -24,9 +22,9 @@
 
             <div class="social-header">
                 <ul>
-                    <li><a href="#"><img src="images/dribbble.png" alt="dribbble"></a></li>
-                    <li><a href="#"><img src="images/behance.png" alt="behance"></a></li>
-                    <li><a href="#"><img src="images/twitter.png" alt="twitter"></a></li>
+                    <li><a href="https://dribbble.com/" target="_blank"><img src="images/dribbble.png" alt="dribbble"></a></li>
+                    <li><a href="https://www.behance.net/" target="_blank"><img src="images/behance.png" alt="behance"></a></li>
+                    <li><a href="https://twitter.com/?lang=en" target="_blank"><img src="images/twitter.png" alt="twitter"></a></li>
                 </ul>
             </div>
         </div>
@@ -103,7 +101,7 @@
         </section>
 
         <section class="portfolio">
-            <div class="portfolion-container transition3">
+            <div class="portfolio-container transition3">
                 <div class="portfolio-left">
                     <div class="inner">
                         <p class="subtitle">Guitar App</p>
@@ -114,7 +112,7 @@
                 <a href="#"><img src="images/fretty.jpg" alt="Fretastic"></a>
             </div>
 
-            <div class="portfolion-container transition3">
+            <div class="portfolio-container transition3">
                 <div class="portfolio-left">
                     <div class="inner">
                         <p class="subtitle">Guitar App</p>
@@ -125,7 +123,7 @@
                 <a href="#"><img src="images/fretty.jpg" alt="Fretastic"></a>
             </div>
 
-            <div class="portfolion-container transition3">
+            <div class="portfolio-container transition3">
                 <div class="portfolio-left">
                     <div class="inner">
                         <p class="subtitle">Guitar App</p>
@@ -137,69 +135,9 @@
             </div>
         </section>
 
+        <!-- These scripts should be here -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous"></script>
-
-        <script>
-            gsap.registerPlugin(ScrollTrigger);
-            var tl = gsap.timeline();
-
-            tl.from('.content', {   // move content section down and fade it in
-                y: '-30%',
-                opacity: '0',
-                duration: 1.5,
-                ease: Power4.easeOut
-            });
-
-            tl.from('.stagger1', { // all elements with stagger1 class will come into view one after another with a delay (specified with the stagger parameter)
-                opacity: 0,
-                y: -50,
-                stagger: 0.3,
-                duration: 2,
-                ease: Power4.easeOut
-            },
-            "-=1.5" // offest something
-            );
-
-            tl.from('.hero-design', {
-                opacity: 0,
-                y: 50,
-                ease: Power4.easeOut,
-                duration: 2
-            },
-            "-=1.85");
-
-            gsap.from(".square-anim", {
-                stagger: 0.2,
-                scale: 0.1,
-                duration: 1,
-                ease: Back.easeOut.config(1.7)
-            })
-
-
-            // scroll based animations
-
-            gsap.from(".transition2", {
-                scrollTrigger: {
-                    trigger: '.transition2',    // any element with this css class, when the top of the element reaches the bottom of the scroll bar it will animate something
-                    start: "top bottom"
-                },
-                y: 50,
-                opacity: 0,
-                duration: 1.2,
-                stagger: 0.3
-            });
-
-            gsap.from(".transition3", {
-                scrollTrigger: {
-                    trigger: '.transition3',    // any element with this css class, when the top of the element reaches the center of the scroll bar it will animate something
-                    start: "top center"
-                },
-                y: 50,
-                opacity: 0,
-                duration: 1.2,
-                stagger: 0.6
-            });
-        </script>
+        <script type='text/javascript' src='scripts/main.js'></script>
     </body>
 </html>

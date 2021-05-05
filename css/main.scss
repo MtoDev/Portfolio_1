@@ -191,11 +191,11 @@ section {
         margin-top: 1em;
     }
 
-    .skills {
-        margin-top: -5em; // picture overlapping effect. Remove if ugly.
-        margin-bottom: -7em; // picture overlapping effect. Remove if ugly.
-        padding-top: 7em;
-    }
+    // .skills {
+    //     margin-top: -5em; // picture overlapping effect. Remove if ugly.
+    //     margin-bottom: -7em; // picture overlapping effect. Remove if ugly.
+    //     padding-top: 7em;
+    // }
 
     .skills-container ul {
         display: grid;
@@ -214,10 +214,6 @@ section {
 
 
 @media only screen and (min-width: 1050px) {
-    .hero {
-        height: 90vh;
-    }
-
     .nav-container {
         display: grid;
         grid-template-columns: 66% auto;
@@ -255,7 +251,8 @@ section {
         }
     }
 
-    .hero {
+    .hero {        
+        height: 90vh;
         display: grid;
         grid-template-columns: 66% auto;
         background: unset;
@@ -284,11 +281,10 @@ section {
         width: 100%;
     }
 
-    // this section is commeted out because something is not right
-    // .portfolio img {
-    //     float: right;
-    //     max-width: 500px;
-    // }
+    .portfolio img {
+        float: right;
+        max-width: 500px;
+    }
 }
 
 

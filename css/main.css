@@ -198,11 +198,6 @@ section {
     margin-left: 2em;
     margin-top: 1em;
   }
-  .skills {
-    margin-top: -5em;
-    margin-bottom: -7em;
-    padding-top: 7em;
-  }
   .skills-container ul {
     display: -ms-grid;
     display: grid;
@@ -219,9 +214,6 @@ section {
 }
 
 @media only screen and (min-width: 1050px) {
-  .hero {
-    height: 90vh;
-  }
   .nav-container {
     display: -ms-grid;
     display: grid;
@@ -258,6 +250,7 @@ section {
     width: 20px;
   }
   .hero {
+    height: 90vh;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 66% auto;
@@ -282,6 +275,10 @@ section {
     margin-left: -50%;
     margin-top: 15%;
     width: 100%;
+  }
+  .portfolio img {
+    float: right;
+    max-width: 500px;
   }
 }
 
